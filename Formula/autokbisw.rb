@@ -3,7 +3,7 @@ class Autokbisw < Formula
   homepage "https://github.com/ohueter/autokbisw"
   url "https://github.com/ohueter/autokbisw/archive/refs/tags/1.4.3.tar.gz"
   sha256 "c5af10bbc125b53e58731fd00bcb6a8a2909a5aab568c97e1d3e54952e72257f"
-  depends_on :xcode
+  uses_from_macos "swift"
 
   def install
     system "swift", "build", "-c", "release", "--disable-sandbox"
